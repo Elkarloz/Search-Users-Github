@@ -34,17 +34,20 @@ const CardUsers = () => {
               {item.login.toUpperCase()}
             </Card.Title>
             <Card.Text>
-              <hr />
-              <b>Id:</b> {item.id}
+              <span>
+                {" "}
+                <b>Id:</b> {item.id}
+              </span>
             </Card.Text>
             <Card.Text>
-              <hr />
-              <b>Repositorio:</b> <a href={item.html_url}>{item.html_url}</a>
-              <hr />
+              <span>
+                <b>Repositorio:</b> <a href={item.html_url}>{item.html_url}</a>
+              </span>
             </Card.Text>
             <Card.Text>
-              <b>Type user:</b> {item.type}
-              <hr />
+              <span>
+                <b>Type user:</b> {item.type}
+              </span>
             </Card.Text>
           </Card.Body>
         </Card>
